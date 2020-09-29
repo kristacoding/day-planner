@@ -14,8 +14,6 @@ updateTime();
 
 var currentTime = (moment().format('H'));
 
-console.log(plannerTime);
-
 
 function updateTime() {
     var plannerTime = [9, 10, 11, 12, 13, 14, 15, 16, 17, 18];
@@ -24,7 +22,6 @@ function updateTime() {
 
 
     for (var i = 0; i < 10; i++) {
-        console.log("hello")
         var thisTime = plannerTime[i]; 
         console.log(thisTime);
 
@@ -45,5 +42,18 @@ function updateTime() {
     }
 }
 
+//--save user input to local storage
+
+$(".saveBtn").on("click", function() {
+    console.log("savebutton");
+    var timeOfday = $(".hour").get();
+    console.log(timeOfday);
+
+    var textContent = $("textarea").val().trim();
+
+    localStorage.setItem(timeOfday, textContent);
+    console.log(timeOfday)
+    console.log(textContent);
+});
 
 

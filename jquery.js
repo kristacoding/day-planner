@@ -46,13 +46,12 @@ function updateTime() {
 
 $(".saveBtn").on("click", function() {
     console.log("savebutton");
-    var timeOfday = $(".hour").get();
+    
+    var timeOfDay = $(this).parent().attr("id");
+    var textContent = $(this).siblings(".textarea").val();
+
+    localStorage.setItem(timeOfDay, textContent);
     console.log(timeOfday);
-
-    var textContent = $("textarea").val().trim();
-
-    localStorage.setItem(timeOfday, textContent);
-    console.log(timeOfday)
     console.log(textContent);
 });
 

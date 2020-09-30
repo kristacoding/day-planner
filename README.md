@@ -1,51 +1,20 @@
-# day-planner
-Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+## Overview
 
-# 05 Third-Party APIs: Work Day Scheduler
+Create a simple calendar application using JQuery and local storage that allows a user to save events for each hour of the day. This app runs in the browser and feature dynamically updated HTML and CSS powered by jQuery.
 
-## Your Task
+## Description
 
-Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+Given starter HMTL and CSS, I was able to create a JavaScript code that allowed for the user to visually see which hours are still available to plan activities and save activities using local storage. 
 
-You'll need to use the [Moment.js](https://momentjs.com/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Moment.js in the browser.
+First, I started by using [Moment.js](https://momentjs.com/) to set the current date and time at the top of the planner. Then I created the following time blocks using HTML and selecting the corresponding CSS elements to match the example. Finally, I worked on implementing the correct id to associated with JavaScript. 
 
+To show which hours were past, present or future, I used the JavaScript and Moment.js. Moment.js tracks hours in military time, so I had to create an array based on military time. This array then goes through a for loop each time you open the page and will update according to the current time. 
 
-## User Story
+After the planner is set with the correct HTML and colors, I focused on saving events to local storage. I added a function that works once you click the 'save' button, it will save the hour and written activity to local storage. In local storage, it will stay there each time the user enters the page. To target the correct object, I used the 'this' function from javascript which refers to the object that lies within the button. This way, I was easily able to save the correct elements to local storage. 
 
-```
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
+## Linked to finish application 
+https://kristacoding.github.io/day-planner/
 
+## Image
+<img src="planner.png"></img>
 
-## Acceptance Criteria
-
-```
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with time blocks for standard business hours
-
-
-WHEN I view the time blocks for that day
-THEN each time block is color-coded to indicate whether it is in the past, present, or future
-
-Function with if statments. Created variables for currentTime and plannerTime. Need to figure out how to get them on the same apples to apples. Something about Army time? I couldnt find the current time in hours, will it read the minutes? 
-
-WHEN I click into a time block
-THEN I can enter an event
-    Used the input for this. might need to associate an idea with the imput text so that it then saved to local storage. 
-    So input text would need to be a variable. 
-    Does it need to change for each time? 
-
-WHEN I click the save button for that time block
-THEN the text for that event is saved in local storage
-    Would need to do an on click for the saved button to save it in local storage. 
-    SAve the PlannerTime and input varable. 
-
-WHEN I refresh the page
-THEN the saved events persist
-
-Once its saved in local storage its always saved in local storage, right?

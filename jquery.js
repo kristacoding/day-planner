@@ -58,7 +58,15 @@ $(function () {
     });
 
     $("#9AM .textarea").val(localStorage.getItem("9AM"));
-
+    $("#10AM .textarea").val(localStorage.getItem("10AM"));
+    $("#11AM .textarea").val(localStorage.getItem("11AM"));
+    $("#12PM .textarea").val(localStorage.getItem("12PM"));
+    $("#1PM .textarea").val(localStorage.getItem("1PM"));
+    $("#2PM .textarea").val(localStorage.getItem("2PM"));
+    $("#3PM .textarea").val(localStorage.getItem("3PM"));
+    $("#4PM .textarea").val(localStorage.getItem("4PM"));
+    $("#5PM .textarea").val(localStorage.getItem("5PM"));
+    $("#6PM .textarea").val(localStorage.getItem("6PM"));
 })
 
 

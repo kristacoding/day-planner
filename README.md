@@ -17,4 +17,5 @@ https://kristacoding.github.io/day-planner/
 
 ## Image
 <img src="planner.png"></img>
+<img src="https://neo2ka.dm.files.1drv.com/y4mn3gwJemRaa-0MZbU5K8rg_UbwfXF8p0kytMrjTiCIQsVN0eSP_V13ZIN-UtKnixf-USgC921EwFQNxDQmhoP6wpQOeq486gek87-TdWl7vmS8A0MrgU_xXJ1M7sp4hZlfkaF9iUoZ9epTV4FTL_xY4ICJdJAQWkw7hBLi6U6RLVYZbzNyqSbZ3Qn7dBDd3WmH_1aoqn2Bh4nXf0IKJgWrA?width=817&height=742&cropmode=none"></img>
 
